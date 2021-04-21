@@ -1,0 +1,11 @@
+@media (max-width: 743px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* -------------GRAY------------ */
+
+@media (max-width: 600px) {}
+
+/* /////////////GRAY------------ */
