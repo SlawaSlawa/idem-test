@@ -127,6 +127,24 @@
     }
 }
 
+@media (max-width: 480px) {
+    .o-0 {
+        order: 0;
+    }
+    .o-1 {
+        order: 1;
+    }
+    .o-2 {
+        order: 2;
+    }
+    .o-3 {
+        order: 3;
+    }
+    .o-4 {
+        order: 4;
+    }
+}
+
 @media (max-width: 453px) {
     .orange__item {
         width: 48.8%;
