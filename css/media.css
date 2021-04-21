@@ -84,6 +84,7 @@
 @media (max-width: 742px) {
     .orange {
         gap: 10px;
+        margin-bottom: 10px;
     }
     .orange__item {
         box-sizing: border-box;
