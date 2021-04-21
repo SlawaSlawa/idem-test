@@ -6,6 +6,16 @@
 
 /* -------------GRAY------------ */
 
-@media (max-width: 600px) {}
+@media (max-width: 480px) {
+    .gray__text {
+        padding: 20px 20px 2px 10px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .section__description {
+        left: 10px;
+        bottom: 10px;
+    }
+}
 
 /* /////////////GRAY------------ */
