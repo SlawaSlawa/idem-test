@@ -1,6 +1,49 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.eot');
+    src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/noto/NotoSans.eot');
+    src: url('../fonts/noto/NotoSans.eot?#iefix') format('embedded-opentype'), url('../fonts/noto/NotoSans.woff2') format('woff2'), url('../fonts/noto/NotoSans.woff') format('woff'), url('../fonts/noto/NotoSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/Proxima/ProximaNova-Regular.eot');
+    src: url('../fonts/Proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/Proxima/ProximaNova-Regular.woff') format('woff'), url('../fonts/Proxima/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
 .container {
     width: 651px;
     margin: 0 auto;
+}
+
+.chat {
+    overflow: hidden;
+    border-bottom: 1px solid #DBDBDB;
+    padding: 41px 41px 30px 20px;
+    height: calc(100vh - 323px);
+    overflow-y: auto;
 }
 
 .chat-frame {
@@ -10,5 +53,124 @@
     background-position: center;
     background-size: cover;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
-    padding: 41px 41px 30px 20px;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.message--my {
+    flex-direction: row-reverse;
+}
+
+.message--my .message__text::before {
+    left: auto;
+    right: -10px;
+}
+
+.message--my .message__image-wrapper {
+    margin-right: 0;
+    margin-left: 18px;
+}
+
+.message__text {
+    position: relative;
+    display: inline-block;
+    background-color: #F1F3F5;
+    border-radius: 5px;
+    padding: 15px;
+    min-width: 123px;
+    max-width: 477px;
+}
+
+.message__text::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #F1F3F5;
+}
+
+.message__image-wrapper {
+    overflow: hidden;
+    width: 47px;
+    height: 42px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin-right: 18px;
+}
+
+.message__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.separator {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.separator::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: -20px;
+    width: 100%;
+    height: 1px;
+    margin-left: -100%;
+    background-color: #DBDBDB;
+}
+
+.separator::after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 20px;
+    width: 100%;
+    height: 1px;
+    margin-right: -100%;
+    background-color: #DBDBDB;
+}
+
+.input-form {
+    padding: 20px 40px 30px 20px;
+}
+
+.message-form__input {
+    font-family: 'Noto Sans', Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #696969;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 129px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.submit-button {
+    font-family: 'Proxima Nova', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    background: #0F54B9;
+    box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
+    border-radius: 21px;
+    padding: 10px 32px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit-button:hover {
+    opacity: .8;
 }

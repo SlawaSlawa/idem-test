@@ -1,0 +1,20 @@
+@media (max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 635px) {
+    .message__text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 560px) {
+    .chat {
+        height: calc(100vh - 254px);
+    }
+    .message-form__input {
+        height: 60px;
+    }
+}
