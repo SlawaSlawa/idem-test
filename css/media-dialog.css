@@ -2,6 +2,9 @@
     .container {
         width: 100%;
     }
+    .input-form {
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 635px) {
