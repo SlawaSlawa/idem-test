@@ -1,0 +1,14 @@
+.container {
+    width: 651px;
+    margin: 0 auto;
+}
+
+.chat-frame {
+    background-color: #F4F4F2;
+    background-image: url(../images/chat-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    padding: 41px 41px 30px 20px;
+}
